@@ -1,3 +1,6 @@
+local Player = game:GetService('Players').LocalPlayer
+firesignal(Player.PlayerGui.MainMenu.MainMenuFrame.ButtonsFrame.EnterGame.MouseButton1Click, {})
+task.wait(2)
 local function getSpells()
     local lp = Player.Character.HumanoidRootPart
     local ori = lp.CFrame
