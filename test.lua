@@ -19,6 +19,3 @@ local function getSpells()
     task.wait(.2)
     return true
 end
-
-getSpells()
-task.wait(2)
