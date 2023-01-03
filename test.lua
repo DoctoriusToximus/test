@@ -1,3 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+task.wait(5)
 local Player = game:GetService('Players').LocalPlayer
 firesignal(Player.PlayerGui.MainMenu.MainMenuFrame.ButtonsFrame.EnterGame.MouseButton1Click, {})
 task.wait(2)
@@ -17,3 +19,6 @@ local function getSpells()
     task.wait(.2)
     return true
 end
+
+getSpells()
+task.wait(2)
